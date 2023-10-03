@@ -21,7 +21,9 @@ public class TrybeGamesDatabase
     public List<Game> GetGamesPlayedBy(Player player)
     {
         // Implementar
-        throw new NotImplementedException();
+        var gamesPlayedByPlayer = Games.Where(game => player.GamesOwned.Contains(game.Id)).ToList();
+
+        return gamesPlayedByPlayer;
     }
 
     // 6. Crie a funcionalidade de buscar jogos comprados por uma pessoa jogadora
