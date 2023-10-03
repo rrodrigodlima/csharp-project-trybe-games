@@ -1,5 +1,6 @@
 namespace TrybeGames;
 
+
 public class GameWithStudio
 {
     public string? GameName { get; set; }
